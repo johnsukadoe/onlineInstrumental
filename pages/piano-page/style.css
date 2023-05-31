@@ -83,85 +83,94 @@ legend {
   display: block;
 }
 
-
-/* main style */
-/* задний фон */
 body {
-  background-color: #414466;
+  scroll-behavior: smooth;
+  background-color: #242a4f;
   color: white;
   font-family: "Roboto", sans-serif;
 }
-/* заголовок */
-h1 {
-  text-align: center;
+
+.main-text{
+  margin-top: 50px;
   margin-bottom: 200px;
 }
-/* флекс ибо клавиши должны распологаться рядом */
+h1 {
+  text-align: center;
+}
 ul {
   display: flex;
   flex-direction: row;
-  justify-content: center;/* центр горизонтально */
-  align-items: center;/* центр вертикально */
-  gap: 10px;/* отступы между клавишами */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-/* стилизация белых клавиш */
 .white-key {
   width: 50px;
   height: 200px;
-  background-color: #E0E0E0; /* задний фон контейнера */
-  display: block; /* дисплей блок, ибо изначально сделал элемента строчным */
-  text-align: center; /* центр текста горизонтально */
-  line-height: 420px;/* меняю расположение текста вертикально(НЕ ЦЕНТРИРУЮ) */
+  background-color: #E0E0E0; 
+  display: block; 
+  text-align: center; 
+  line-height: 420px;
   color: white;
-  border-radius: 10px; /* радиус контейнера */
-  transition: all 0.07s; /* добавление анимаций */
+  border-radius: 10px;
+  transition: all 0.07s;
 }
 
-/* стилизация черных клавиш */
 .black-key {
-  border-radius: 10px; /* радиус контейнера */
-  display: block; /* дисплей блок, ибо изначально сделал элемента строчным */
-  line-height: 100px; /* меняю расположение текста вертикально(НЕ ЦЕНТРИРУЮ) */
-  text-align: center; /* центр текста горизонтально */
-  position: absolute; /* позиция абсолютная, чтобы я мог менять расположение черных клавиш куда угодно */
+  border-radius: 10px; 
+  display: block; 
+  line-height: 100px; 
+  text-align: center; 
+  position: absolute; 
   width: 50px;
   height: 200px;
-  z-index: 2000; /* это правило распологает элемента над другими элементами */
-  background-color: #414466;/* цвет контейнера */
+  z-index: 2000; 
+  background-color:  #242a4f;
+  color: white;
 }
 
-/* меняю расположение черных клавиш отдельно */
-/* ДЛЯ ТВОЕГО НОУТА ПО ДРУГОМУ, ПОМЕНЯЙ, ЕСЛИ НЕ ПОНЯТНО НАПИШЕШЬ */
 .black-key-1 {
-  top: 150px;
+  top: 240px;
   left: 38.5vw;
 }
 
 .black-key-2 {
-  top: 150px;
+  top: 240px;
   left: 42.5vw;
 }
 
 .black-key-3 {
-  top: 150px;
+  top: 240px;
   left: 50.3vw;
 }
 
 .black-key-4 {
-  top: 150px;
+  top: 240px;
   left: 54.3vw;
 }
 
 .black-key-5 {
-  top: 150px;
+  top: 240px;
   left: 58.3vw;
 }
+.linkToMain{
+  padding: 10px 5px;
+  background-color: #008cff;
+  color:aliceblue;
+  font-weight: 700;
+  border-radius: 13px;
+  margin-left: 50px;
+  transition: all 1s;
+}
 
-/* анимация когда срабатывает transition */
+.linkToMain-active{
+  background-color: #51affc;
+}
+
 .active {
   width: 49px;
   height: 195px;
-  background-color: #CFEB44;
-  box-shadow: 0px 8px 24px 0px rgba(247, 255, 24, 0.766);
+  background-color:#008cff;
+  box-shadow: 0px 8px 24px 0px #008cff;
 }

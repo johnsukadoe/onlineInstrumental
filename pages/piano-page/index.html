@@ -5,14 +5,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Заголовок-->
-    <h1 style="font-size: 30px;">Virtual Piano</h1> <!--добавил стиль таким образом, ибо в style.css это не работает-->
-
-    <!--список клавиш пианино-->
-    <!--если скажет добавить анимацию и для черных клавиш, то для всех спанов добавляешь класс white-key -->
+    <div class="main-text">
+        <a class="linkToMain" href="../main-page/index.html#section">Back to the main page</a>
+        <h1 style="font-size: 30px;">Virtual Piano</h1>
+    </div>
+    
     <ul>
         <li>
-            <span data-key="68" class="white-key">D</span> <!--добавляю data-key чтобы когда нажимал на кнопку синхронизировался с data-key музыки-->
+            <span data-key="68" class="white-key">D</span> 
             <span data-key="82" class="black-key black-key-1">R</span>
         </li>
         <li>
@@ -40,7 +40,6 @@
 
 
 
-<!--добавляю звуков с теми data-key которые как у клавиш(вышесказанное)-->
     <audio data-key="68" src="assets/assets_audio_a.mp3"></audio>
     <audio data-key="82" src="assets/assets_audio_a♯.mp3"></audio>
     <audio data-key="70" src="assets/assets_audio_b.mp3"></audio>
@@ -54,7 +53,6 @@
     <audio data-key="79" src="assets/assets_audio_g.mp3"></audio>
     <audio data-key="76" src="assets/assets_audio_g♯.mp3"></audio>
     
-    <!--добавляю Js-->
     <script src="script.js"></script>
 </body>
 </html>
