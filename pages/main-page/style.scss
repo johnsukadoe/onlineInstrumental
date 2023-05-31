@@ -82,6 +82,8 @@ a{
     background-position: center;
     padding: 15px;
     border-radius: 20px;
+    position: relative;
+    top: 0;
     transition: all 1s;
     p{
         font-family: 'Open Sans', sans-serif;
@@ -90,17 +92,12 @@ a{
         font-size: 18px;
         margin-bottom: 10px;
         text-decoration: none;
+        transition: all 0.5s;
     }
-    .link{
-        margin-bottom: 20px;
-        background-color: #242a4f;
-        font-size: 17px;
-        font-weight: 600;
-        border-radius: 11px;
-        padding: 10px 10px;
-        color: #fff;
-        text-decoration: none;
-        transition: all 1s;
+    .description{
+        font-weight: 400;
+        font-size: 13px;
+        color: rgb(160, 160, 160);
     }
 }
 .guitar-card{
@@ -120,10 +117,10 @@ a{
     -webkit-box-shadow: 1px 15px 8px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 1px 15px 8px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 1px 15px 8px 0px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0);
+    p{
+        opacity: 0;
+    }
     cursor: pointer;
 }
 
-.card .link-active{
-    background-color: #fff;
-    color:#000;
-}
