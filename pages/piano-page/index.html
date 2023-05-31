@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Заголовок-->
+    <h1 style="font-size: 30px;">Virtual Piano</h1> <!--добавил стиль таким образом, ибо в style.css это не работает-->
+
+    <!--список клавиш пианино-->
+    <!--если скажет добавить анимацию и для черных клавиш, то для всех спанов добавляешь класс white-key -->
+    <ul>
+        <li>
+            <span data-key="68" class="white-key">D</span> <!--добавляю data-key чтобы когда нажимал на кнопку синхронизировался с data-key музыки-->
+            <span data-key="82" class="black-key black-key-1">R</span>
+        </li>
+        <li>
+            <span data-key="70" class="white-key">F</span>
+            <span data-key="84" class="black-key black-key-2">T</span>
+        </li>
+        <li><span data-key="71" class="white-key">G</span>
+        </li>
+        <li>
+            <span data-key="72" class="white-key">H</span>
+            <span data-key="85" class="black-key black-key-3">U</span>
+        </li>
+        <li>
+            <span data-key="74" class="white-key">J</span>
+            <span data-key="73" class="black-key black-key-4">I</span>
+        </li>
+        <li>
+            <span data-key="75" class="white-key">K</span>
+            <span data-key="79" class="black-key black-key-5">O</span>
+        </li>
+        <li>
+            <span data-key="76" class="white-key">L</span>
+        </li>
+    </ul>
+
+
+
+<!--добавляю звуков с теми data-key которые как у клавиш(вышесказанное)-->
+    <audio data-key="68" src="assets/assets_audio_a.mp3"></audio>
+    <audio data-key="82" src="assets/assets_audio_a♯.mp3"></audio>
+    <audio data-key="70" src="assets/assets_audio_b.mp3"></audio>
+    <audio data-key="84" src="assets/assets_audio_c.mp3"></audio>
+    <audio data-key="71" src="assets/assets_audio_c♯.mp3"></audio>
+    <audio data-key="72" src="assets/assets_audio_d.mp3"></audio>
+    <audio data-key="85" src="assets/assets_audio_d♯.mp3"></audio>
+    <audio data-key="74" src="assets/assets_audio_e.mp3"></audio>
+    <audio data-key="73" src="assets/assets_audio_f.mp3"></audio>
+    <audio data-key="75" src="assets/assets_audio_f♯.mp3"></audio>
+    <audio data-key="79" src="assets/assets_audio_g.mp3"></audio>
+    <audio data-key="76" src="assets/assets_audio_g♯.mp3"></audio>
+    
+    <!--добавляю Js-->
+    <script src="script.js"></script>
+</body>
+</html>

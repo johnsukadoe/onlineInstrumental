@@ -1,1 +1,167 @@
-/*# sourceMappingURL=style.css.map */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+
+/* main style */
+/* задний фон */
+body {
+  background-color: #414466;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+/* заголовок */
+h1 {
+  text-align: center;
+  margin-bottom: 200px;
+}
+/* флекс ибо клавиши должны распологаться рядом */
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;/* центр горизонтально */
+  align-items: center;/* центр вертикально */
+  gap: 10px;/* отступы между клавишами */
+}
+
+/* стилизация белых клавиш */
+.white-key {
+  width: 50px;
+  height: 200px;
+  background-color: #E0E0E0; /* задний фон контейнера */
+  display: block; /* дисплей блок, ибо изначально сделал элемента строчным */
+  text-align: center; /* центр текста горизонтально */
+  line-height: 420px;/* меняю расположение текста вертикально(НЕ ЦЕНТРИРУЮ) */
+  color: white;
+  border-radius: 10px; /* радиус контейнера */
+  transition: all 0.07s; /* добавление анимаций */
+}
+
+/* стилизация черных клавиш */
+.black-key {
+  border-radius: 10px; /* радиус контейнера */
+  display: block; /* дисплей блок, ибо изначально сделал элемента строчным */
+  line-height: 100px; /* меняю расположение текста вертикально(НЕ ЦЕНТРИРУЮ) */
+  text-align: center; /* центр текста горизонтально */
+  position: absolute; /* позиция абсолютная, чтобы я мог менять расположение черных клавиш куда угодно */
+  width: 50px;
+  height: 200px;
+  z-index: 2000; /* это правило распологает элемента над другими элементами */
+  background-color: #414466;/* цвет контейнера */
+}
+
+/* меняю расположение черных клавиш отдельно */
+/* ДЛЯ ТВОЕГО НОУТА ПО ДРУГОМУ, ПОМЕНЯЙ, ЕСЛИ НЕ ПОНЯТНО НАПИШЕШЬ */
+.black-key-1 {
+  top: 150px;
+  left: 38.5vw;
+}
+
+.black-key-2 {
+  top: 150px;
+  left: 42.5vw;
+}
+
+.black-key-3 {
+  top: 150px;
+  left: 50.3vw;
+}
+
+.black-key-4 {
+  top: 150px;
+  left: 54.3vw;
+}
+
+.black-key-5 {
+  top: 150px;
+  left: 58.3vw;
+}
+
+/* анимация когда срабатывает transition */
+.active {
+  width: 49px;
+  height: 195px;
+  background-color: #CFEB44;
+  box-shadow: 0px 8px 24px 0px rgba(247, 255, 24, 0.766);
+}
