@@ -1,0 +1,188 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: #242a4f;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-text{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+h1 {
+  text-align: center;
+}
+
+body{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.notes{
+    
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 23px;
+}
+.do{
+    background: #fff0;
+    height: 550px;
+    -webkit-box-shadow: 1px 0px 13px 10px rgba(255, 0, 0, 0.2);
+    -moz-box-shadow: 1px 0px 13px 10px rgba(255, 0, 0, 0.2);
+    box-shadow: 1px 0px 13px 10px rgba(255, 0, 0, 0.2);
+}
+.re{
+    height: 500px;
+    -webkit-box-shadow: 1px 0px 13px 10px rgba(255, 161, 0, 0.2);
+    -moz-box-shadow: 1px 0px 13px 10px rgba(255, 161, 0, 0.2);
+    box-shadow: 1px 0px 13px 10px rgba(255, 161, 0, 0.2);
+}
+.mi{
+    height: 450px;
+    -webkit-box-shadow: 1px 0px 13px 10px rgba(236, 255, 0, 0.2);
+    -moz-box-shadow: 1px 0px 13px 10px rgba(236, 255, 0, 0.2);
+    box-shadow: 1px 0px 13px 10px rgba(236, 255, 0, 0.2);   
+}
+.pha{
+    height: 400px;
+    -webkit-box-shadow: 1px 0px 13px 10px rgba(102, 255, 0, 0.2);
+    -moz-box-shadow: 1px 0px 13px 10px rgba(102, 255, 0, 0.2);
+    box-shadow: 1px 0px 13px 10px rgba(102, 255, 0, 0.2);
+}
+.sol{
+    height: 350px;
+    -webkit-box-shadow: 0px 4px 10px 6px rgba(0, 253, 255, 0.2);
+    -moz-box-shadow: 0px 4px 10px 6px rgba(0, 253, 255, 0.2);
+    box-shadow: 0px 4px 10px 6px rgba(0, 253, 255, 0.2);
+}
+.lya{
+    height: 300px;
+    -webkit-box-shadow: 0px 4px 10px 6px rgba(106, 0, 255, 0.2);
+    -moz-box-shadow: 0px 4px 10px 6px rgba(106, 0, 255, 0.2);
+    box-shadow: 0px 4px 10px 6px rgba(106, 0, 255, 0.2);
+}
+.si{
+    height: 250px;
+    -webkit-box-shadow: 1px 0px 13px 10px rgba(255, 0, 0, 0.2);
+    -moz-box-shadow: 1px 0px 13px 10px rgba(255, 0, 0, 0.2);
+    box-shadow: 1px 0px 13px 10px rgba(255, 0, 0, 0.2);
+}
+.do2{
+    height: 200px;
+    -webkit-box-shadow: 1px 0px 13px 10px rgba(255, 161, 0, 0.2);
+    -moz-box-shadow: 1px 0px 13px 10px rgba(255, 161, 0, 0.2);
+    box-shadow: 1px 0px 13px 10px rgba(255, 161, 0, 0.2);  
+}
+.linkToMain{
+  padding: 10px 5px;
+  background-color: #008cff;
+  color:aliceblue;
+  font-weight: 700;
+  border-radius: 13px;
+  margin-left: 50px;
+  transition: all 1s;
+}
+
+.linkToMain-active{
+  background-color: #51affc;
+}
+
+.active{
+    box-shadow: none;
+    background: rgb(166,55,55);
+    background: linear-gradient(0deg, rgba(166,55,55,1) 0%, rgba(110,43,140,1) 14%, rgba(50,76,163,1) 26%, rgba(47,156,148,1) 38%, rgba(55,171,45,1) 49%, rgba(157,154,53,1) 61%, rgba(177,122,46,1) 73%, rgba(167,40,40,1) 85%);
+    transition: all 1s;
+}
